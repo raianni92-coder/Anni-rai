@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float a,b,c,d;
+    int choice;
+    printf("enter your choice either 0 or 1:");
+    scanf("%d",&choice);
+    if (choice==1)
+    {
+    printf("enter the distance in km:");
+    scanf("%f",&a);
+    b=a*0.621371;
+    printf("distance in miles:%f",b);
+    }
+    else if(choice==0)
+    {
+    printf("enter distance in miles:");
+    scanf("%f",&c);
+    d=c*1.60934;
+    printf("distance in km:%f",d);
+    }
+}
