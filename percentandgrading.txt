@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+    float a,b,c,d,e,s;
+    printf("enter the marks in each subject");
+    scanf("%f%f%f%f%f%f", &a,&b,&c,&d,&e);
+    s=(a+b+c+d+e)/5;
+    if (s>90&&s<100)
+    {
+        printf("grade=A");
+    }
+    else if(s>80&&s<90)
+    {
+        printf("grade=B");
+    }
+    else if("s>60&&s<80")
+    {
+        printf("grade=C");
+    }
+    else if(s<60)
+    {
+        printf("grade=D");
+    }
+    else
+    {
+        printf("invalid input");
+    }
+    return 0;
+}
