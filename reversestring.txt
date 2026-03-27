@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+    char str[100];
+    int i=0,j;
+    printf("enter string:");
+    scanf("%s",str);
+    while(str[i]!='\0')
+    {
+        i=i+1;
+    }
+    printf("the reversed string is:");
+    for(j=i-1;j>=0;j--)
+    {
+        printf("%c",str[j]);
+    }
+    
+    
+    return 0;
+}
+
