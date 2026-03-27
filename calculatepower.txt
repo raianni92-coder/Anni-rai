@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+    int x,y,i,a=1;
+    printf("enter the number and power");
+    scanf("%d%d",&x,&y);
+    for(i=1;i<=y;i++)
+    {
+        a=a*x;
+    }
+    printf("calculated power:%d",a);
+  
+   return 0;
+}
+
