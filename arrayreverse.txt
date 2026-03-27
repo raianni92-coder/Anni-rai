@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+    int a[5],b[5],sum=0,avg;
+    int i,j;
+    for(i=0;i<5;i++)
+    {
+        printf("enter array element:");
+        scanf("%d",&a[i]);
+        
+    }
+   for(i=0,j=4;i<5;i++,j--)
+    {
+        b[i]=a[j];
+    }
+    printf("reversed array:\n");
+    for (i=0;i<5;i++)
+    {
+        printf("\n%d",b[i]);
+    }
+    
+    return 0;
+}
+
