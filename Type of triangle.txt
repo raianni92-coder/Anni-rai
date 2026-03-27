@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include <math.h>
+int main()
+{
+    int a,b,c, equiletral,isoceles, scalene ;
+    printf("enter the value of a,b,c\n");
+    scanf("%d%d%d",&a,&b,&c);
+    if((a+b)>c||(a+c)>b||(b+c)>a){
+        printf("The triangle is valid\n");
+     if  ((a==b)&&(b==c))
+         printf("The triangle is quilateral\n");
+     else if ((a==b)&&(a!=c))
+     printf("The triangle is isoceles\n");
+    else if ((a!=b)&&(a!=c))
+     printf("The triangle is scalene\n");
+    }
+    else {
+        printf("The tringle is not valid");
+    }
+    return 0;
+    }

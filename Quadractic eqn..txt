@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include <math.h>
+int main()
+{
+    double a,b,c,dis,root1,root2,realpart, imgpart ;
+    printf("enter the coefficient of a,b,c:");
+    scanf("%lf%lf%lf",&a,&b,&c);
+    dis = b*b-(4*a*c);
+    if(dis>0){
+        root1=(-b+sqrt(dis))/2*a ;
+        root2=(-b-sqrt(dis))/2*a ;
+        printf("roots are real and different\n");
+    }
+    else if (dis==0){
+        root1=(-b)/2*a;
+        root2=(-b)/2*a;
+        printf("roots are real and equal\n");
+    }
+    else  {
+        realpart=(-b)/2*a;
+        imgpart=sqrt(-dis)/2*a;
+        printf("roots are complex\n");
+    }
+    return 0;
+}
