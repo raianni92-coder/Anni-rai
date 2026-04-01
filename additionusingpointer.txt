@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<math.h>
+int reverse(int);
+int main()
+{
+   int a,b,*p,*q,c;
+   printf("enter two numbers:");
+   scanf("%d%d",&a,&b);
+   p=&a;
+   q=&b;
+   c=*p+*q;
+   printf("addition=%d",c);
+   
+}
